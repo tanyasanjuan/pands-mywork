@@ -11,18 +11,18 @@ newNumber = 2025 - number
 print (f'Hello {name}, your age is {newNumber}.')
 
 # 2nd solution, the follow solution I consider is simplear that the 1st one I thought. I guide myself using W3School.
-# The numbers in {} line 15, are index numbers and refers to the position of an element in a sequence (like a list). 
+# The numbers in {} line 18, are index numbers and refers to the position of an element in a sequence (like a list). 
 # Indexing starts at 0. 
-age = "21"
 name = "Andrew"
-txt = "Hello {1}, your age is {0}."
-print(txt.format (age,name))
+age = "21"
+txt = "Hello {0}, your age is {1}."
+print(txt.format (name,age))
 
 #Adding a tab for the 2nd solution to separate the sentences. 
-age = "21"
 name = "Andrew"
-txt = "Hello {1},\t your age is {0}."
-print(txt.format (age,name))
+age = "21"
+txt = "Hello {0},\t your age is {1}."
+print(txt.format (name,age))
 
 # Added a tab in the 1st solution I got to show a space between the two sentences.
 name = input ("Enter your name: ")
