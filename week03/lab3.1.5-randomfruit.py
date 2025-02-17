@@ -1,4 +1,4 @@
-# Program lab3.5X-randomfruit.py prints out a random fruit.
+# Program lab3.1.5-randomfruit.py prints out a random fruit.
 # Author: Tanya San Juan
 
 import random

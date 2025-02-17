@@ -1,4 +1,4 @@
-# Program lab3.4X-randomGenerator.py prints out a random number between 1 and 10.
+# Program lab3.1.4-randomGenerator.py prints out a random number between 1 and 10.
 # Author: Tanya San Juan
 
 import random

@@ -1,4 +1,4 @@
-# Program lab3.2X-sub.py is to substract a number from another
+# Program lab3.1.2-sub.py is to substract a number from another
 # Input reads in a string, so we need to it into an int
 # so we can perform mathematical operations
 # author: Tanya San Juan

@@ -1,4 +1,4 @@
-# Program lab3.3X-div.py reads in two numbers
+# Program lab3.1.3-div.py reads in two numbers
 # And outputs the integer answer and reminder.
 # Author: Tanya San Juan
 
