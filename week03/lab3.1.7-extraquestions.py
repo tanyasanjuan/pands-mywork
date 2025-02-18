@@ -1,6 +1,6 @@
 # Program lab3.7X-extraquestions.py is to solve extra questions for week 3.
 # Author: Tanya San Juan
-'''
+
 # Question 6: Why does this expression cause an error? 
 message = 'I have eaten' + 99 + 'burritos'
 print (message)
@@ -10,7 +10,7 @@ print (message)
 
 # Question 7: How can you fix it? 
 # To solve this problem should we convert the integer to a string. 
-'''
+
 numburritos = 99
 message = 'I have eaten ' + str (numburritos) + ' burritos'
 print (message)
