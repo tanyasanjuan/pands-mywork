@@ -1,7 +1,7 @@
 # This program read in a students percentages 
 # And prints out the corresponding grade
 # author: Tanya San Juan
-
+'''
 percentage = float (input ('Enter the percentage: '))
 #print (percentage)
 
@@ -41,3 +41,32 @@ elif round_percentage < 70: # Betweeen 60 and 69
     print ('Merit2')
 else: # The only option left is between 70 and 100 
     print ('Distintion')
+'''
+# Continuously prompt for a percentage until user enters -1
+
+while True:
+        percentage = float(input("Please enter a number between 0 and 100 (-1 to exit): "))
+
+        if percentage == -1:
+            print("Exiting program. Bye!")
+           # break  # Exit the loop
+
+        # Validate percentage range
+        if percentage < 0 or percentage > 100:
+            print("Please enter a number between 0 and 100")
+           # continue  # Ask for input again
+
+        # Round the percentage
+        rounded_percentage = round(percentage)
+
+        # Determine grade based on the rounded percentage
+        if rounded_percentage < 40:
+           print ('Fail')
+        elif rounded_percentage < 50:
+            print ('Pass')
+        elif rounded_percentage < 60:
+            print ('Merit')
+        elif rounded_percentage < 70:
+            print ('Merit2')
+        else:
+            print ('Distinction')
