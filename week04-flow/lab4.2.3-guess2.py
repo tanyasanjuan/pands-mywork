@@ -1,4 +1,4 @@
-# This program the tells the user if there guess is too high or too low, 
+# This program tells the user if there guess is too high or too low, 
 # Shows statement inside the while loop if the guess is not accurate
 # Author: Tanya San Juan
 
