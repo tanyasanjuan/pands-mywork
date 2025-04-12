@@ -37,7 +37,7 @@ num2 = int (input("Enter second number: "))
 
 answer = num1 * num2
 print(f"The answer is: {answer}")
-'''
+
 # If the user for the second number enters a string, the program will crash
 # To avoid user errors, we will use a while loop for the second number as well
 # If the user in the second number enters a string, the program will ask for a number again
@@ -56,4 +56,21 @@ while (num2 == False):
         print ("That was not a number", end=" ")
 
 answer = num1 * num2
+print(f"The answer is: {answer}")
+'''
+# To have a code cleaner and easier to read and use, we can use a function
+def readNum():
+    num = False
+    while (num == False):
+        try:
+            num = int (input("Enter a number: "))
+        except ValueError:
+            print ("That was not a number", end=" ")
+    return num
+# Now we can use the function to read the numbers
+num1 = readNum()
+num2 = readNum()
+
+answer = num1 * num2
+
 print(f"The answer is: {answer}")
