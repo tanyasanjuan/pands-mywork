@@ -1,5 +1,5 @@
 # Read in two numbers and multiple them
-
+'''
 num1 = int (input("Enter first number: "))
 num2 = int (input("Enter second number: "))
 
@@ -18,6 +18,21 @@ try:
     num1 = int (input("Enter a number: "))
 except ValueError:
     num1 = int (input("No strings a number: "))
+num2 = int (input("Enter second number: "))
+
+answer = num1 * num2
+print(f"The answer is: {answer}")
+'''
+# If the user in the second attempt enters a string, the program will ask for a number again
+# To avoid user errors, we can use a while loop
+
+num1 = False
+while (num1 == False):
+    try:
+        num1 = int (input("Enter a number: "))
+    except ValueError:
+        print ("Please enter a number: ")
+
 num2 = int (input("Enter second number: "))
 
 answer = num1 * num2
