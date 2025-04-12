@@ -22,7 +22,7 @@ num2 = int (input("Enter second number: "))
 
 answer = num1 * num2
 print(f"The answer is: {answer}")
-'''
+
 # If the user in the second attempt enters a string, the program will ask for a number again
 # To avoid user errors, we can use a while loop
 
@@ -34,6 +34,26 @@ while (num1 == False):
         print ("Please enter a number: ")
 
 num2 = int (input("Enter second number: "))
+
+answer = num1 * num2
+print(f"The answer is: {answer}")
+'''
+# If the user for the second number enters a string, the program will crash
+# To avoid user errors, we will use a while loop for the second number as well
+# If the user in the second number enters a string, the program will ask for a number again
+num1 = False
+while (num1 == False):
+    try:
+        num1 = int (input("Enter a number: "))
+    except ValueError:
+        print ("That was not a number", end=" ")
+
+num2 = False
+while (num2 == False):
+    try:
+        num2 = int (input("Enter second number: ")) 
+    except ValueError:
+        print ("That was not a number", end=" ")
 
 answer = num1 * num2
 print(f"The answer is: {answer}")
