@@ -57,7 +57,7 @@ while (num2 == False):
 
 answer = num1 * num2
 print(f"The answer is: {answer}")
-'''
+
 # To have a code cleaner and easier to read and use, we can use a function
 def readNum():
     num = False
@@ -70,6 +70,23 @@ def readNum():
 # Now we can use the function to read the numbers
 num1 = readNum()
 num2 = readNum()
+
+answer = num1 * num2
+
+print(f"The answer is: {answer}")
+'''
+# To a better user experience we can show clearer messages
+def readNum(message = "enter a number: "):
+    num = False
+    while (not num):
+        try:
+            num = int (input(message))
+        except ValueError:
+            print ("That was not a number", end=" ")
+    return num
+# Now we can use the function to read the numbers
+num1 = readNum()
+num2 = readNum("enter second number: ")
 
 answer = num1 * num2
 
