@@ -15,7 +15,7 @@ def displaymenu ():
 # Test the function
 choice = displaymenu()
 print(f"You selected: {choice}")
-'''
+
 # With the function create a program 
 # That keeps displaying the menu until the user picks quit
 # If the user chooses V then call a function called doView.
@@ -44,3 +44,23 @@ while (choice != "q"):
     elif choice != "q":
         print("\n\nplease select either a,v or q")
     choice = displaymenu()
+'''
+    # Write the function doAdd (students) 
+    # Read in the student's name 
+    # Read in module names and grades
+    # Store the data in a dictionary 
+    # Add the dictionary to a list
+
+students = []
+def readModules():
+        return []
+def doAdd(students):
+        currentstudent = {}
+        currentstudent["name"] = input("Enter name: ")
+        currentstudent["modules"] = readModules()
+        
+        students.append(currentstudent)
+    # Test the function
+doAdd(students)
+doAdd(students)
+print(students)
