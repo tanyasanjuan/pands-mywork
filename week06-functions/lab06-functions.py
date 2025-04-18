@@ -41,9 +41,20 @@ def doAdd(students):
         students.append(currentstudent)
 
 
+# Add the function displayModules(modules)
+# The function displayModules should display the modules and their grades
+def displayModules(modules):
+    print ("\tname \tgrade")
+    for module in modules:
+        print(f"\t {module["name"]} \t {module["grade"]}")
+
+
 # Add the funcionn doView(students)
 # The function doView should display the students and their modules
 def doView(students):
+    for currentstudent in students:
+        print(currentstudent ["name"])
+        displayModules(currentstudent["modules"])
     print (students)
 
 
