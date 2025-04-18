@@ -1,5 +1,6 @@
 # Read in two numbers and multiple them
-'''
+# The program will ask the user to enter two numbers
+# The program will multiply the two numbers and print the answer
 num1 = int (input("Enter first number: "))
 num2 = int (input("Enter second number: "))
 
@@ -74,7 +75,7 @@ num2 = readNum()
 answer = num1 * num2
 
 print(f"The answer is: {answer}")
-'''
+
 # To a better user experience we can show clearer messages
 def readNum(message = "enter a number: "):
     num = False
