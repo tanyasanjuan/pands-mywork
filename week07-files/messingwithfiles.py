@@ -22,4 +22,15 @@ writeNumber(15)
 # If the number 3 is modified to 4, the text file will show 4 in it.
 # But the number printed will be 3. (The previous number)
 
- 
+# The function will count how many times the program was run.
+# Main program
+# read the number from the file
+number = readNumber()
+
+# increment the number by 1
+number += 1
+
+print(f"we have run this program has {number} times.")
+
+# write the new number to the file
+writeNumber(number)
