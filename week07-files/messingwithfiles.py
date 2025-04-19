@@ -2,6 +2,7 @@
 # and saves it to a file called count.txt
 
 # The funtion will read the file and oyutput the number. 
+
 FILENAME = "count.txt"
 def readNumber():
     with open(FILENAME) as f:
@@ -11,6 +12,7 @@ def readNumber():
 #test the readNumber function
 num = readNumber()
 print(num)
+
 
 # The function will write the number to the file.
 def writeNumber(number):
@@ -29,8 +31,20 @@ number = readNumber()
 
 # increment the number by 1
 number += 1
-
 print(f"we have run this program has {number} times.")
 
 # write the new number to the file
 writeNumber(number)
+
+
+# The program will check if the file exists.
+# If the file does not exist, it will create the file and write 0 to it.
+# Import os.path: The os.path module provides functions 
+# for manipulating file and directory paths.
+import os.path
+FILENAME = "count.txt"
+# check if the file exists
+if not os.path.isfile(FILENAME):
+    print ("File does not exist.")
+    # create the file and write 0 to it
+    writeNumber(0)
