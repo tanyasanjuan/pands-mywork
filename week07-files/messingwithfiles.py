@@ -5,9 +5,15 @@
 
 FILENAME = "count.txt"
 def readNumber():
-    with open(FILENAME) as f:
-        number = int(f.read())
-        return number
+    try:
+        with open(FILENAME) as f:
+            number = int(f.read())
+            return number
+    except IOError:
+        # This file will be created when we write back.
+        # no file assumes fisrt time running the program.
+        # ie 0 previous runs.
+        return 0
 
 #test the readNumber function
 num = readNumber()
@@ -48,3 +54,4 @@ if not os.path.isfile(FILENAME):
     print ("File does not exist.")
     # create the file and write 0 to it
     writeNumber(0)
+
