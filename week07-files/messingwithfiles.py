@@ -55,3 +55,22 @@ if not os.path.isfile(FILENAME):
     # create the file and write 0 to it
     writeNumber(0)
 
+# The function will store a simple Dictionary to a file as JSON.
+# Import json: The json module provides functions for working with JSON data.
+
+import json
+FILENAME = "testdict.json"
+sample= dict(name='Fred', age=31, grades=[1,34,55])
+
+def writeDict(obj):
+    with open(FILENAME, "wt") as f:
+        json.dump(obj, f)
+    # The json.dump() function writes the JSON representation of the object to the file.
+    # The "wt" mode opens the file for writing in text mode.
+    # The file will be created if it does not exist.
+    # If the file exists, it will be overwritten.
+
+    # Test the writeDict function
+writeDict(sample)
+
+# The testdict.json file it's very similar to a Dict.
