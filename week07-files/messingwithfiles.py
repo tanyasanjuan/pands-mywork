@@ -37,7 +37,7 @@ number = readNumber()
 
 # increment the number by 1
 number += 1
-print(f"we have run this program has {number} times.")
+print(f"we have run this program {number} times.")
 
 # write the new number to the file
 writeNumber(number)
@@ -70,7 +70,18 @@ def writeDict(obj):
     # The file will be created if it does not exist.
     # If the file exists, it will be overwritten.
 
-    # Test the writeDict function
+# Test the writeDict function
 writeDict(sample)
-
 # The testdict.json file it's very similar to a Dict.
+
+
+# The function will read in a dict object from a file.
+def readDict():
+    # This will throw an error if the file does not exist.
+    # It should readly just return an empty dict.
+    with open(FILENAME) as f:
+        return json.load(f)
+    
+# Test the readDict function
+somedict = readDict()
+print(somedict)
