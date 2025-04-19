@@ -58,6 +58,14 @@ def doView(students):
     print (students)
 
 
+def doSave(students):
+    # Put the call to save dictt here.
+    # xThe function should use the json module to save the students to a file
+    #import json
+    #with open("students.json", "w") as f:
+        #json.dump(students, f)
+    print("in save")
+
 # main program 
 students = []
 choice = displaymenu()
@@ -67,6 +75,8 @@ while (choice != "q"):
         doAdd(students)
     elif choice == "v":
         doView(students)
+    elif choice == "s":
+        doSave(students)
     elif choice != "q":
         print("\n\nplease select either a,v or q")
     choice = displaymenu()
