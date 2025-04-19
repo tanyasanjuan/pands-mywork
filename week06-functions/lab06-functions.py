@@ -9,6 +9,7 @@ def displaymenu ():
     print("What would you like to do?")
     print("\t(a) Add new student")
     print("\t(v) View student")
+    print("\t(s) Save student")
     print("\t(q) Quit")
     choice = input("Type one letter (a/v/q):").strip()
     # The strip() method removes any leading and trailing whitespace from the string.
@@ -59,12 +60,22 @@ def doView(students):
 
 
 def doSave(students):
-    # Put the call to save dictt here.
-    # xThe function should use the json module to save the students to a file
-    #import json
-    #with open("students.json", "w") as f:
-        #json.dump(students, f)
-    print("in save")
+# The function writeDict should write the dictionary to a file as JSON.
+# Put the call to save dict here.
+#The function should use the json module to save the students to a file
+    import json
+    with open("students.json", "w") as f:
+       json.dump(students, f)
+    print("student saved")
+
+def doLoad():   
+# The function should use the json module to load the students from a file
+    import json
+    with open("students.json", "r") as f:
+        students = json.load(f)
+    print("student loaded")
+    return students
+
 
 # main program 
 students = []
