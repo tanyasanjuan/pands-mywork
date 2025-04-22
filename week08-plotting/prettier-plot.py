@@ -31,4 +31,4 @@ plt.legend() # This will add a legend to the plot.
 
 #add this line to the end you can comment out the plt.show() line above.
 # see how the axis have changed.
-plt.savefig("prettier-plot.png") # This will save the plot to a file called scatter.png.
+plt.savefig("prettier-plot.png") # This will save the plot to a png file.
