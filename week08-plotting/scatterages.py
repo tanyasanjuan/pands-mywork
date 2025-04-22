@@ -14,4 +14,11 @@ salaries = np.random.randint(minSalary, maxSalary, numberOfEntries)
 ages = np.random.randint(low=21, high= 65, size= numberOfEntries) # Absolute values set at the top.
 
 plt.scatter(ages, salaries ) # This will be random
-plt.show()
+#plt.show() # if  you do tihs the program will halt here until the plot is closed.
+
+#add x squared
+xpoints = np.array(range(1, 101))
+ypoints = xpoints * xpoints # multiply each entry by itself.
+
+plt.plot(xpoints, ypoints, color = "red") # This will be a line plot.
+plt.show() # See how the axis have changed.
