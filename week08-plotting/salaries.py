@@ -6,6 +6,6 @@ import numpy as np
 minSalary = 2000
 maxSalary = 8000
 numberOfEntries = 10
-
+np.random.seed(10) # This will make the random numbers the same each time.
 salaries = np.random.randint(minSalary, maxSalary, numberOfEntries)
 print(salaries)
