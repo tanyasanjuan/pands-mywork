@@ -13,12 +13,18 @@ np.random.seed(1)
 salaries = np.random.randint(minSalary, maxSalary, numberOfEntries)
 ages = np.random.randint(low=21, high= 65, size= numberOfEntries) # Absolute values set at the top.
 
-plt.scatter(ages, salaries ) # This will be random
+# Add a legend, title and axis to this plot.
+# same code as above, but with a legend, title and axis.
+plt.scatter(ages, salaries, label="salaries" ) # This will be random
 #plt.show() # if  you do tihs the program will halt here until the plot is closed.
 
 #add x squared
 xpoints = np.array(range(1, 101))
 ypoints = xpoints * xpoints # multiply each entry by itself.
 
-plt.plot(xpoints, ypoints, color = "red") # This will be a line plot.
+plt.plot(xpoints, ypoints, color = "r", label= "x squared") # This will be a line plot.
+plt.title("random plot")
+plt.xlabel("salaries")
+plt.ylabel("age")
+plt.legend() # This will add a legend to the plot.
 plt.show() # See how the axis have changed.
